@@ -46,3 +46,16 @@ export function addToCart(item) {
       resolve({ data:{id:itemId} });
     });
   }
+
+  export async function resetCart(userId) {
+    return new Promise(async (resolve) => {
+    const response = await fetchItemsByUserId(userId)
+    console.log("response----",response);
+    const items = await response.data;
+    for(let item of items){
+      await deleteItemFromCart(item.id)
+    }
+    resolve({status:"success"});
+    })
+  
+  }
