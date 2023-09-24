@@ -7,7 +7,8 @@ import {
 } from '../features/cart/cartSlice.js';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
-import { selectLoggedInUser, updateUserAsync } from '../features/auth/authSlice.js';
+// import { updateUserAsync } from '../features/auth/authSlice.js';
+import { selectUserInfo, updateUserAsync } from '../features/user/userSlice';
 import { createOrderAsync, selectedCurrentOrder } from '../features/order/orderSlice.js';
 
 
@@ -22,7 +23,7 @@ function Checkout() {
     formState: { errors },
     reset
   } = useForm();
-  const user = useSelector(selectLoggedInUser)
+  const user = useSelector(selectUserInfo);
   console.log("user----",user);
 
   const totalAmount = items.reduce(
