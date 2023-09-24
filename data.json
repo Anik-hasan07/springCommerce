@@ -2435,6 +2435,52 @@
       },
       "status": "pending",
       "id": 6
+    },
+    {
+      "items": [
+        {
+          "id": 6,
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/6/1.png",
+            "https://i.dummyjson.com/data/products/6/2.jpg",
+            "https://i.dummyjson.com/data/products/6/3.png",
+            "https://i.dummyjson.com/data/products/6/4.jpg"
+          ],
+          "quantity": 1,
+          "user": 1
+        }
+      ],
+      "totalAmount": 1749,
+      "totalItems": 1,
+      "user": {
+        "email": "iamakashcse@gmail.com",
+        "password": "1234567890Aa",
+        "addresses": [
+          {
+            "name": "Anik hasan raj",
+            "email": "iamakashcse@gmail.com",
+            "city": "Rajshahi",
+            "state": "Rajshahi",
+            "pinCode": "6280",
+            "phone": "01742288203",
+            "street": "house #66, sector 10,uttara,Dhaka."
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": null,
+      "status": "pending",
+      "id": 7
     }
   ]
 }
